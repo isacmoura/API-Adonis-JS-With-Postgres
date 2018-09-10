@@ -32,7 +32,7 @@ class PostController {
    * GET posts/:id
    */
   async show ({ params, request, response, view }) {
-    const post = await oPost.find(params.id)
+    const post = await Post.find(params.id)
 
     return post
   }
